@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Par Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <section class="hero-slider">
+  <div class="slides">
+
+    <!-- Slide 1 -->
+    <div class="slide active" style="background-image: url('img/Par\ Home\ page\ banner_1-01.jpg')">
+    
+     
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url('img/Par Home page banner-02.png');">
+  <div class="content left-content">
+    <h1><strong>Trusted Partner In Safety & Connectivity</strong></h1>
+  </div>
+</div>
+        
+          
+
+            
+         
+        
+        </ul>
+        
+      </div>
+      </div>
+    
+  <!-- Slide 3-->
+    <div class="slide" style="background-image: url('img/Group\ 19\ \(1\).png');">
+      <div class="overlay"></div>
+      <div class="content left-content">
+    
+       <h1><strong>Your Partner In Industrial Power Excellence
+                Reliable Electrical Solutions For Every Industry</strong></h1>
+      
+        </ul>
+      </div>
+    </div>
+     <!-- Slide 3-->
+    <div class="slide" style="background-image: url('img/Group\ 18.png')">
+      <div class="overlay"></div>
+     <div class="content left-content">
+        <h1><strong>Smart Interiors for Smarter Journeys</strong></h1>
+        
+       
+        <h1><strong>Smart Interiors for Smarter Journeys</strong></h1>
+        
+        
+      </div>
+      </div>
+    </div>
+
+  </div>
+   <button class="slider-arrow prev">&#10094;</button>
+  <button class="slider-arrow next">&#10095;</button>
+</section>
+
+<style>
+/* Hero Slider */
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #ca0a0a;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+/* ============================= */
+/*       Hero Slider Styles      */
+/* ============================= */
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* desktop height */
+  overflow: hidden;
+}
+
+.slides {
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover; /* cover full area */
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slide.active {
+  opacity: 0;
+}
+
+
+
+
+/* Slide Content */
+.hero-slider .content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 80px 40px;
+  color: #fff;
+}
+
+.hero-slider .content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-slider .content p {
+  margin-bottom: 25px;
+}
+
+/* Hero Points */
+.hero-points {
+  list-style: disc;
+  margin: 20px 0 25px 20px;
+  padding: 0;
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.hero-points li {
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.hero-slider .btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #079247;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-slider .btn:hover {
+  background: #a83a0f;
+  transform: translateY(-3px);
+}
+
+/* Slider Arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.slider-arrow:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.slider-arrow.prev { left: 20px; }
+.slider-arrow.next { right: 20px; }
+
+/* ============================= */
+/*       Responsive Adjustments   */
+/* ============================= */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .hero-slider {
+    height: auto;
+  }
+
+  .slide {
+    min-height: 450px;
+    background-size: cover; /* use cover for full width */
+    background-position: center top; /* top part visible */
+  }
+
+  .hero-slider .content {
+    max-width: 90%;
+    margin-left: 0;
+    padding: 60px 20px;
+  }
+
+  .hero-slider .content h1 {
+    font-size: 36px;
+  }
+
+  .hero-points {
+    font-size: 16px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-slider {
+    height: auto;
+  }
+
+  .slide {
+    min-height: 350px;
+    background-size: cover; /* full width */
+    background-position: center top;
+  }
+
+  .hero-slider .content {
+    max-width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 40px 10px;
+  }
+
+  .hero-slider .content h1 {
+    font-size: 15px;
+  }
+
+  .hero-points {
+    font-size: 10px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+/* ============================= */
+/* Slider Arrows Responsive Fix  */
+/* ============================= */
+
+/* Tablet View */
+@media (max-width: 991px) {
+  .slider-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .slider-arrow.prev { left: 10px; }
+  .slider-arrow.next { right: 10px; }
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+  .slider-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    top: 45%; /* slightly lower for better alignment */
+    background: rgba(0,0,0,0.4);
+  }
+
+  .slider-arrow:hover {
+    background: rgba(0,0,0,0.6);
+  }
+
+  .slider-arrow.prev { left: 5px; }
+  .slider-arrow.next { right: 5px; }
+}
+</style>
+
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const nextBtn = document.querySelector('.slider-arrow.next');
+  const prevBtn = document.querySelector('.slider-arrow.prev');
+
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+
+  nextBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  });
+</script>
+
+<!-- Sticky Get a Quote Button -->
+<a href="quote.html" class="quote-sticky">
+  Get a Quote
+</a>
