@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f9;
+    }
+
+   .navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: red; /* Change this line */
+  backdrop-filter: blur(10px);
+  padding: 15px 100px;
+}
+
+    
+
+    .navbar-brand img {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-brand img:hover {
+      transform: scale(1.1);
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-weight: 600;
+      margin: 0 15px;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #fff !important;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      background: #fff;
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .navbar-toggler {
+      border: none;
+      outline: none;
+    }
+    .links {
+      color: red;
+      font-size: 16px;
+      line-height: 1.8;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .know-button {
+      background-color: red;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+      border: none;
+      padding: 15px;
+      transition: 0.3s;
+    }
+
+    .know-button a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .know-button:hover {
+      background-color: black;
+    }
+
+    .sections {
+      background-color: #d3d3d3;
+      color: #333;
+      padding: 20px;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      transition: all 0.3s;
+      font-weight: bold;
+    }
+
+    .sections:hover {
+      background-color: #bdbdbd;
+    }
+
+    .arrow {
+      font-size: 22px;
+      color: #888;
+      transition: transform 0.3s;
+    }
+
+    .arrow.rotate {
+      transform: rotate(180deg);
+    }
+
+    .content {
+      display: none;
+      padding: 20px;
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .card-title {
+      color: #009cde;
+      font-weight: bold;
+    }
+
+    .hero-overlay {
+      background-color: rgba(0,0,0,0.2);
+      padding: 40px;
+      border-radius: 10px;
+      margin: 15px;
+    }
+
+    .hero-overlay h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .atag {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .atag:hover {
+      color: #fff;
+    }
+
+    @media (max-width:576px){
+
+      .hero-overlay {
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+      }
+
+      .hero-overlay h2 {
+        font-size: 1.2rem;
+      }
+
+      .know-button {
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg" style="background-color: #E31E25;">
+    <div class="container-fluid">
+      
+      <!-- Brand with logo and text -->
+      <a href="index.html" class="navbar-brand d-flex align-items-center text-white" style="gap: 10px;">
+        <img src="img1/Yasha Logo.png" alt="Yasha Logo" style="height: 68px; background-color: #E31E25;">
+        <div style="line-height: 1.2;">
+          <div style="font-weight: bold; font-size: 1.4rem;">YASHA HYDRAULIC</div>
+          <div style="font-size: 1.00rem;">SALES & SERVICES PVT. LTD.</div>
+         
+        </div>
+      </a>
+  
+      <!-- Toggle button for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link text-white">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link text-white">Services</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+  
+<!-- HERO CAROUSEL -->
+<section id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+
+      <div class="position-relative">
+
+        <img src="img/Handheld tools banner- inside page.jpg"
+             class="img-fluid w-100 d-block"
+             alt="Slide 1">
+
+        <div class="container position-absolute top-0 start-0 end-0 h-100">
+
+          <div class="row h-100 align-items-center">
+
+            <div class="col-lg-6 col-md-8 col-12">
+
+              <div class="hero-overlay text-white">
+
+                <h2 class="fw-bold mb-3">
+                  Built for Hands-on Performance
+                </h2>
+
+                <h4>Handheld Tools</h4>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+
+      <div class="position-relative">
+
+        <img src="img/Handheld tools banner- inside page 2.jpg"
+             class="img-fluid w-100 d-block"
+             alt="Slide 2">
+
+        <div class="container position-absolute top-0 start-0 end-0 h-100">
+
+          <div class="row h-100 align-items-center">
+
+            <div class="col-lg-6 col-md-8 col-12">
+
+              <div class="hero-overlay text-white">
+
+                <h2 class="fw-bold mb-3">
+                  Precision You Can Feel
+                </h2>
+
+                <h4>Handheld Tools</h4>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev">
+
+    <span class="carousel-control-prev-icon"></span>
+
+  </button>
+
+  <button class="carousel-control-next" type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next">
+
+    <span class="carousel-control-next-icon"></span>
+
+  </button>
+
+</section>
+
+<br><br>
+
+<!-- SECTION 1 -->
+<div class="container mt-3">
+
+  <div class="sections" onclick="toggleSection(1)">
+    Hydraulic Tools
+    <span class="arrow" id="arrow-1">▼</span>
+  </div>
+
+  <div class="content" id="content-1" style="display:block;">
+
+    <div class="row g-4 mt-2">
+
+      <!-- CARD -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="card h-100 shadow">
+
+          <img src="img/Hydraulic breaker.png"
+               class="card-img-top"
+               alt="Hydraulic Breaker">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              Hammers & Breakers
+            </h5>
+
+            <h6>Applications:</h6>
+
+            <ul>
+              <li>Renovation and demolition work</li>
+            </ul>
+
+            <h6>Features:</h6>
+
+            <ul>
+              <li>Slim design</li>
+              <li>Excellent balance</li>
+            </ul>
+
+          </div>
+
+          <div class="know-button">
+            <a href="#" class="atag">Know More</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="card h-100 shadow">
+
+          <img src="img/Hydraulic-Core-Drills.jpg"
+               class="card-img-top"
+               alt="Core Drills">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              Hydraulic Core Drills
+            </h5>
+
+            <h6>Applications:</h6>
+
+            <ul>
+              <li>Concrete and asphalt drilling</li>
+            </ul>
+
+            <h6>Features:</h6>
+
+            <ul>
+              <li>Suitable for heavy duty work</li>
+              <li>Can be mounted in drill stand</li>
+            </ul>
+
+          </div>
+
+          <div class="know-button">
+            <a href="#" class="atag">Know More</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="card h-100 shadow">
+
+          <img src="img/_Hydraulic-Cut-Off-Saws.jpg"
+               class="card-img-top"
+               alt="Cut Off Saws">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              Hydraulic Cut-Off Saws
+            </h5>
+
+            <h6>Applications:</h6>
+
+            <ul>
+              <li>Cutting concrete and steel</li>
+            </ul>
+
+            <h6>Features:</h6>
+
+            <ul>
+              <li>High cutting power</li>
+              <li>Easy operation</li>
+            </ul>
+
+          </div>
+
+          <div class="know-button">
+            <a href="#" class="atag">Know More</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- SECTION 2 -->
+<div class="container mt-3">
+
+  <div class="sections" onclick="toggleSection(2)">
+    Pneumatic Tools
+    <span class="arrow" id="arrow-2">▼</span>
+  </div>
+
+  <div class="content" id="content-2">
+
+    <div class="row g-4 mt-2">
+
+      <!-- CARD -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="card h-100 shadow">
+
+          <img src="img/Hammers.jpg"
+               class="card-img-top"
+               alt="Hammers">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              Hammers
+            </h5>
+
+            <h6>Applications:</h6>
+
+            <ul>
+              <li>Construction and industrial use</li>
+            </ul>
+
+            <h6>Features:</h6>
+
+            <ul>
+              <li>Strong and reliable</li>
+            </ul>
+
+          </div>
+
+          <div class="know-button">
+            <a href="#" class="atag">Know More</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="card h-100 shadow">
+
+          <img src="img/Breakers.jpg"
+               class="card-img-top"
+               alt="Breakers">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              Breakers
+            </h5>
+
+            <h6>Applications:</h6>
+
+            <ul>
+              <li>General demolition work</li>
+            </ul>
+
+            <h6>Features:</h6>
+
+            <ul>
+              <li>Reduced vibration</li>
+              <li>Long service life</li>
+            </ul>
+
+          </div>
+
+          <div class="know-button">
+            <a href="#" class="atag">Know More</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- SECTION 3 -->
+<div class="container mt-3 mb-5">
+
+  <div class="sections" onclick="toggleSection(3)">
+    Petrol Drill & Breakers
+    <span class="arrow" id="arrow-3">▼</span>
+  </div>
+
+  <div class="content" id="content-3">
+
+    <div class="row g-4 mt-2">
+
+      <!-- CARD -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="card h-100 shadow">
+
+          <img src="img/cp-road.png"
+               class="card-img-top"
+               alt="CP Road">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              CP Road
+            </h5>
+
+            <ul>
+              <li>60 J impact power</li>
+              <li>Compact design</li>
+              <li>Easy to handle</li>
+            </ul>
+
+          </div>
+
+          <div class="know-button">
+            <a href="#" class="atag">Know More</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="card h-100 shadow">
+
+          <img src="img/cp-rail.png"
+               class="card-img-top"
+               alt="CP Rail">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              CP Rail
+            </h5>
+
+            <ul>
+              <li>Designed for railway applications</li>
+              <li>Portable solution</li>
+              <li>Efficient tamping</li>
+            </ul>
+
+          </div>
+
+          <div class="know-button">
+            <a href="#" class="atag">Know More</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="card h-100 shadow">
+
+          <img src="img/CP-DRILL.png"
+               class="card-img-top"
+               alt="CP Drill">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              CP Drill
+            </h5>
+
+            <ul>
+              <li>Drilling and breaking</li>
+              <li>Compact package</li>
+              <li>Remote work locations</li>
+            </ul>
+
+          </div>
+
+          <div class="know-button">
+            <a href="#" class="atag">Know More</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer class="footer bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <!-- About Us Section -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase">About Us</h5>
+        <p>Yasha Hydraulics, specializing in Earthmoving and Construction equipment spares, providing top-quality solutions since 2001.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase">Contact Info</h5>
+        <p><i class="fas fa-map-marker-alt"></i> Pride Plaza, Shop No. 3<br>Behind Dr. Ambedkar Statue,<br>Pimpri, Pune - 411 018.</p>
+        <p><i class="fas fa-phone"></i>  9822297696  / 7798885747</p>
+        <p><i class="fas fa-envelope"></i> yash.hydraulics@gmail.com</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Home</a></li>
+          <li><a href="#" class="footer-link">About</a></li>
+          <li><a href="#" class="footer-link">Services</a></li>
+          <li><a href="#" class="footer-link">Contact</a></li>
+        </ul>
+        <!-- Social Icons -->
+        <div class="social-icons mt-3">
+          <a href="" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://maps.app.goo.gl/Ap52Sb1fjMpagW18A" class="social-icon" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+    <!-- Copyright -->
+    <div class="text-center mt-3">
+      <hr class="footer-divider">
+      <p class="mb-0">© 2025 Yasha Hydraulics | All Rights Reserved. | Developed & Managed By<a href="https://www.d2sindia.com/" class="social-icon"> D2S India,Pune. </p>
+    </div>
+  </div>
+</footer>
+
+<!-- CSS Styling -->
+<style>
+  .footer {
+    font-size: 15px;
+  }
+
+  .footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .footer-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .footer-link:hover {
+    color: #f8f9fa;
+    text-decoration: underline;
+  }
+
+  
+.social-icons a {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #e00000; /* Bootstrap primary or your brand color */
+}
+ .footer-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 80%;
+    margin: 10px auto;
+  }
+ @media (max-width: 767px) {
+  .footer .col-md-4 {
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 14px;
+  }
+
+  .footer h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .footer p {
+    font-size: 13px;
+    margin: 4px 0;
+  }
+
+  .footer-link {
+    display: block;
+    margin: 6px 0;
+    font-size: 13px;
+  }
+
+  .social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+    margin: 8px;
+  }
+
+  .footer-divider {
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+
+</style>
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 300) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  });
+
+  scrollToTopBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+
+
+<!-- FontAwesome for Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+<!-- jQuery and Owl Carousel Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script src="script.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      nav: true,
+      dots: true,
+     
+    });
+  });
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</body>
+</html>
+<!-- SCRIPT -->
+<script>
+
+function toggleSection(id) {
+
+  const content = document.getElementById(`content-${id}`);
+  const arrow = document.getElementById(`arrow-${id}`);
+
+  if(content.style.display === "block"){
+    content.style.display = "none";
+  }
+  else{
+    content.style.display = "block";
+  }
+
+  arrow.classList.toggle("rotate");
+}
+
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

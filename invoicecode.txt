@@ -1,0 +1,29 @@
+<?php echo date('F jS, Y', strtotime($fetch['order_date']));?></h5>
+                                        <h5><b>Payment Mode :</b><?php echo $fetch['payment_method']?></h5>
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="table-responsive m-t-40" style="clear: both;">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr style="background: black;color: white;">
+                                            <th class="text-center">#</th>
+                                            <th>Products</th>
+                                            <th class="text-center">Quantity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php 
+                                        $totalAmount = 0;
+                                        for($i = 0; $i < count($productDetails); $i++) {
+                                            $productName = trim($productDetails[$i]);
+                                            $quantity = trim($quantityDetails[$i]);
+                                           
+                                        ?>
+                                        <tr>
+                                            <td class="text-center"><?php echo $i + 1; ?></td>
+                                            <td><?php echo $productName; ?></td>
+                                            <td style="text-align: center;"><?php echo $quantity; ?></td>
+
+                                        </tr>
+                                        <?php } ?>

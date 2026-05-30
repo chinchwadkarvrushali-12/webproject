@@ -1,397 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Par Solutions</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f9;
+    }
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f9;
+    }
 
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-     <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-    <img src="img/finallogo-.png" alt="Solartec Logo" style="height: 70px; width: auto; margin-right: 10px;">
-    <div class="logo-text">
-        <h1 class="m-0 text-primary">Par Solutions</h1>
-        <span class="tagline"><strong>Protection Through Sustainable Solutions</strong></span>
-    </div>
-</a>
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link "><strong>Home</strong></a>
-            <a href="about.html" class="nav-item nav-link"><strong>About</strong></a>
-            <a href="service.html" class="nav-item nav-link"><strong>Service</strong></a>
-           
-            <a href="contact.html" class="nav-item nav-link active"><strong>Contact</strong></a>
-        </div>
-                <div class="d-flex align-items-center justify-content-center gap-3 d-none d-lg-flex">
-    <a href="tel:9209951147"
-       class="btn btn-primary rounded-0 py-4 px-lg-5 d-flex flex-column align-items-center justify-content-center text-center">
-        <span>Call Us Now</span>
-        <span>92099 51147</span>
-    </a>
-</div>
-<style>
-    .btn span:last-child {
-    font-size: 20px;
-    font-weight: 700;
+   .navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: red; /* Change this line */
+  backdrop-filter: blur(10px);
+  padding: 15px 100px;
 }
 
-</style>
-    </div>
-</nav>
-
-<!-- Sticky Get a Quote Button -->
-<a href="quote.html" class="quote-sticky">
-  Get a Quote
-</a>
-
-   <div class="container-fluid page py-5 mb-5"
-     style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-     url('img/Contact Us.jpg') center center / cover no-repeat;">
-
-    <div class="container py-5 text-left">
-        <h1 class="display-3 text-white mb-3 animated slideInDown"></h1>
-    </div>
-</div>
-    <!-- Page Header End -->
-
-<style>
-.page {
-  max-height:  500px; /* exact ratio */
-  width: 100%;
- display: flex;
-  align-items: center;
-}
-    /* Mobile View Adjustments */
-@media (max-width: 991px) {
-    /* Stack logo text vertically */
-    .navbar-brand {
-        flex-direction: row; /* Keep logo + text in row */
-        justify-content: flex-start;
-        align-items: center;
-        padding: 10px 15px !important;
     }
 
-    /* Reduce logo size */
-    .logo-img {
-        height: 50px; /* smaller logo for mobile */
-        margin-right: 8px;
+    .navbar-brand img {
+      transition: transform 0.3s ease-in-out;
     }
 
-    /* Adjust text size */
-    .logo-text h1 {
-        font-size: 18px;
-        margin: 0;
+    .navbar-brand img:hover {
+      transform: scale(1.1);
     }
 
-    .logo-text .tagline {
-        font-size: 12px;
-        color: #ca0a0a;
-        margin-top: 2px;
+    .nav-link {
+      color: #fff !important;
+      font-weight: 600;
+      margin: 0 15px;
+      position: relative;
+      transition: color 0.3s ease;
     }
 
-    /* Navbar links stacked */
-    .navbar-nav {
-        flex-direction: column;
-        border-top: 1px solid #eee;
-        width: 100%;
+    .nav-link:hover {
+      color: #fff !important;
     }
 
-    .navbar-nav .nav-link {
-        padding: 10px 0;
-        font-size: 14px;
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      background: #fff;
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s ease-in-out;
     }
 
-    /* Move toggle button to right */
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
     .navbar-toggler {
-        margin-left: auto;
+      border: none;
+      outline: none;
     }
-
-    /* Hide desktop call button */
-    .d-flex.d-lg-flex {
-        display: none !important;
-    }
-}
-
-/* Optional: Mobile floating Call Button (if you want it) */
-@media (max-width: 991px) {
-    .mobile-call-btn {
-        position: fixed;
-        bottom: 15px;
-        right: 15px;
-        z-index: 999;
-        background: #0d6efd;
-        color: #fff;
-        padding: 12px 18px;
-        border-radius: 50px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: 14px;
-        font-weight: 600;
-    }
-}
-    .btn span:last-child {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-   .page {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url('img/Contact Us.jpg') no-repeat center center;
-    background-size: cover; /* Ensures full coverage without distortion */
-    height: 900px; /* Slightly taller for desktop screens */
-    display: flex;
-    align-items: center; /* Vertically centers content */
-    justify-content: center; /* Horizontally centers content */
-    color: #fff; /* For text visibility */
-}
-
-/* Tablet */
-@media (max-width: 991px) {
-    .page {
-        height: 300px; /* reduce height on tablets */
-        background-position: top center; /* show top of image */
-    }
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-    .page {
-        height: 250px; /* smaller height on phones */
-        background-position: top center; /* focus on top of image */
-    }
-}
-
-</style>
-    <!-- Contact Start -->
-  <!-- Contact Start -->
-    <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
-        <div class="container contact px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 ps-lg-0">
-                        <h6 class="text-primary"></h6>
-                        <h1 class="mb-4">CONTACT US</h1>
-                      <!----<h4 class="mb-4">Receive messages instantly with our PHP and Ajax contact form - available in the <a href="https://htmlcodex.com/downloading/?item=2439">Pro Version</a> only.</h4>-->
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
-    <div class="position-relative h-100">
-        <iframe 
-            class="position-absolute w-100 h-100" 
-            style="border:0;" 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.626209187136!2d73.7865385!3d18.629943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c17dc99df227%3A0x3b71f3b24d11c77a!2sPar%20Solutions%2C%20Shop%20No%201%2C%20Riddhishree%20Building%2C%20Opp.%20Sanghavi%20Steel%20Compound%2C%20Mohan%20Nagar%2C%20Chinchwad%2C%20Pune%2C%20Maharashtra%20411019!5e0!3m2!1sen!2sin!4v1706674621320!5m2!1sen!2sin" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-</div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-<style>
-   .logo-text {
-    display: flex;
-    flex-direction: column;
-    font-weight: 400;
-    font-size: 24px;
-}
-
-.tagline {
-    font-size: 16px;
-    color: #ca0a0a;
-    font-weight: 400;
-    margin-top: 2px;
-}
-    .fixed-quote {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  background: #7CDB5A;
+    .company-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
   color: #fff;
-  padding: 12px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
-  z-index: 999;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.fixed-quote:hover {
-  background: #5cb746;
-  transform: translateY(-3px);
+company-name:hover {
+  color: #b30000;
+  transform: scale(1.05);
+}
+
+      /* Mobile View */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 8px 15px;
+  }
+  
+  .navbar-brand img {
+    height: 60px;
+    width: auto;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+
+  .navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .navbar-collapse {
+    background-color: #E31E25;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  @media (max-width: 576px) {
+  .navbar-brand img {
+    height: 50px;
+    margin-right: 8px;
+  }
+
+  .company-name {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+
+}
+
+     /* Red Strip Container */
+.red-strip {
+  background-color:#E31E25;
+  padding: 20px;
+  color: white;
 }
 
 </style>
-    <!-- Footer Start -->
-<div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-
-            <!-- About Section -->
-            <div class="col-lg-4 col-md-6">
-                <h5 class="text-white mb-4"><strong>Par Solutions</strong></h5>
-                <p>
-                    Par Solutions is a trusted service provider in Pune offering 
-                    Heat Cure Glass Coating, Roof Coating, Telecommunication, 
-                    Security Systems, LAN Networking, and Industrial Electrical services. 
-                    We focus on quality, reliability, and customer satisfaction.
-                </p>
-            </div>
-
-            <!-- Address Section -->
-            <div class="col-lg-4 col-md-6">
-                <h5 class="text-white mb-4">Address</h5>
-                <p class="mb-2">
-                    <i class="fa fa-map-marker-alt me-3"></i>
-                    Office No. 1, RIDDHISHREE BUILDING, OPP. SANGHAVI STEEL COMPOUND,<br>
-                    MOHAN NAGAR, CHINCHWAD,<br>
-                    PUNE – 411019
-                </p>
-
-                <p class="mb-2">
-                    <i class="fa fa-phone-alt me-3"></i>92099 51147
-                </p>
-
-                <p class="mb-2 d-flex align-items-start">
-                    <i class="fa fa-envelope me-3 mt-1"></i>
-                    <a href="mailto:sales.parsolutions@gmail.com" 
-                       class="text-body small text-break text-decoration-none">
-                       sales.parsolutions@gmail.com<br/>
-                       info@parsolutions.in
-                    </a>
-                </p>
-
-                <div class="d-flex pt-2">
-                    <a class="btn btn-square btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-square btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-lg-4 col-md-6">
-                <h5 class="text-white mb-4">Quick Links</h5>
-                <a class="btn btn-link" href="about.html">About Us</a>
-                <a class="btn btn-link" href="contact.html">Contact Us</a>
-                <a class="btn btn-link" href="service.html">Our Services</a>
-                <a class="btn btn-link" href="#">Terms & Condition</a>
-                <a class="btn btn-link" href="#">Support</a>
-            </div>
-
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg" style="background-color: #E31E25;">
+    <div class="container-fluid">
+      
+      <!-- Brand with logo and text -->
+      <a href="index.html" class="navbar-brand d-flex align-items-center text-white" style="gap: 10px;">
+        <img src="img1/Yasha Logo.png" alt="Yasha Logo" style="height: 68px; background-color: #E31E25;">
+        <div style="line-height: 1.2;">
+          <div style="font-weight: bold; font-size: 1.4rem;">YASHA HYDRAULIC</div>
+          <div style="font-size: 1.00rem;">SALES & SERVICES PVT. LTD.</div>
+         
         </div>
+      </a>
+  
+      <!-- Toggle button for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link text-white">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link text-white">Services</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact</a></li>
+        </ul>
+      </div>
+      
     </div>
+  </nav>
+  
+  <!-- Mission Section -->
+<section class="py-5" style="background-color: white; color: black;">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-6 text-start">
+        <h3>Yasha Hydraulics</h3>
+        <p>
+          Yasha Hydraulics, established in 2001, deals in spares for earth-moving, mining, and construction equipment, including Hydraulic Rock Breaker spares, Transit Mixers, and Vibrating Compactors.<br>
+          <b>We are the Authorized Dealer for Chicago Pneumatic Construction Equipment, DTR Equipment, and Yanmar Mini Excavators covering West Maharashtra and Konkan.</b><br>
+          We offer Hydraulic Rock Breakers, Portable Compressors, Light Towers, and more.<br>
+          We stock a wide range of spares for excavators, representing some of the best manufacturers in the country.
+        </p>
+      </div>
 
-    <!-- Copyright -->
+      <div class="col-md-6">
+        <h4>Head Office</h4>
+        <p>
+          <a href="https://maps.app.goo.gl/ZPeZSYWffdsRFiSYA" class="social-icon" target="_blank" style="color:#000;">
+            <i class="fas fa-map-marker-alt"></i> 📍 Click here for location
+          </a><br>
+          Pride Plaza, Shop No. 3<br>
+          Behind Dr. Ambedkar Statue,<br>
+          Pimpri, Pune - 411 018.
+        </p>
+        <p><i class="fas fa-envelope"></i> yash.hydraulics@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 9822297696 / 7798885747</p>
+
+        <h4 class="mt-4">Branch 1</h4>
+        <p>
+          <a href="https://maps.app.goo.gl/dxkGqh6iuaDtXLBW6" class="social-icon" target="_blank" style="color:#000;">
+            <i class="fas fa-map-marker-alt"></i> 📍 Click here for location
+          </a><br>
+          Shevanta Niwas, Opp. Jadhav Automobile,<br>
+          Near Bajaj Auto Showroom, Jhagade Wasti, Chakan
+        </p>
+        <p><i class="fas fa-phone"></i> +91 7798885746</p>
+
+        <h4 class="mt-4">Branch 2</h4>
+        <p>
+          <a href="https://maps.app.goo.gl/Zg22WM86w3XvrTqw7" class="social-icon" target="_blank" style="color:#000;">
+            <i class="fas fa-map-marker-alt"></i> 📍 Click here for location
+          </a><br>
+          Arihant Plaza, Near Jain Wada, Ankali, Sangli
+        </p>
+        <p><i class="fas fa-phone"></i> +91 8956323503</p>
+      </div>
+
+      <div class="col-lg-6 mt-4">
+        <div class="contact-form p-4 rounded bg-light w-100">
+          <h3>Write to Us</h3>
+          <form>
+            <input type="text" class="form-control mb-3" placeholder="Name" required>
+            <input type="email" class="form-control mb-3" placeholder="Email" required>
+            <input type="text" class="form-control mb-3" placeholder="Subject" required>
+            <textarea class="form-control mb-3" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-danger w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section --
+  <section class="contact-section text-center py-5">
     <div class="container">
-        <div class="copyright">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Par Solutions</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    Designed By <a href="https://htmlcodex.com">D2S INDIA, PUNE</a>
-                </div>
-            </div>
+    
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-white text-start">
+          <h3>Yasha-Hydraulics</h3>
+          <p> Yash Hydraulics, established in 2001, deals in spares for earth-moving, mining, and construction equipment, including Hydraulic Rock Breaker spares, Transit Mixers, and Vibrating Compactors. We are the Authorized Dealer for Chicago Pneumatic Construction Equipment, covering Pachim Maharashtra and Marathwada. Under this segment, we offer Hydraulic Rock Breakers, Portable Compressors, Light Towers, Soil Compactors, and more.<br><br>
+            We stock a wide range of spares for excavators, representing some of the best manufacturers in the country. </p>
+          <p class="gst">GST No: 33AVPPP9142E1ZC</p>
+          <p>Specializing in construction equipment and hydraulic solutions since 2001.</p>
+          <iframe class="w-100" height="250" src="https://www.google.com/maps/embed?pb=Yash-Hydraulics"></iframe>
         </div>
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="contact-form p-4 rounded bg-white">
+            <h3>Write to Us</h3>
+            <form>
+              <input type="text" class="form-control mb-3" placeholder="Name" required>
+              <input type="email" class="form-control mb-3" placeholder="Email" required>
+              <input type="text" class="form-control mb-3" placeholder="Subject" required>
+              <textarea class="form-control mb-3" placeholder="Message" required></textarea>
+              <button type="submit" class="btn btn-danger w-100">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-<!-- Footer End -->
+  </section>
+  <section class="py-5 bg-danger text-white">
+  <div class="container">
+    <div class="row align-items-start">
+      
+      <!-- Left Column: Company Info --
+      <div class="col-lg-6 text-start">
+        <h3 class="mb-3">Yash Hydraulics</h3>
+        <p>
+          Yash Hydraulics, established in 2001, deals in spares for earth-moving, mining, and construction equipment, including Hydraulic Rock Breaker spares, Transit Mixers, and Vibrating Compactors.
+          <br><br>
+          We are the Authorized Dealer for Chicago Pneumatic Construction Equipment, covering Pachim Maharashtra and Marathwada. Under this segment, we offer Hydraulic Rock Breakers, Portable Compressors, Light Towers, Soil Compactors, and more.
+          <br><br>
+          We stock a wide range of spares for excavators, representing some of the best manufacturers in the country.
+        </p>
+        <p class="fw-bold">GST No: 33AVPPP9142E1ZC</p>
+        <p>Specializing in construction equipment and hydraulic solutions since 2001.</p>
+        <iframe 
+          class="w-100 rounded border-0" 
+          height="250" 
+          src="https://www.google.com/maps/embed?pb=Yash-Hydraulics" 
+          allowfullscreen="" 
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+      <!-- Right Column: Contact Form --
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="contact-form p-4 rounded bg-white text-dark shadow">
+          <h3 class="mb-4">Write to Us</h3>
+          <form>
+            <input type="text" class="form-control mb-3" placeholder="Name" required>
+            <input type="email" class="form-control mb-3" placeholder="Email" required>
+            <input type="text" class="form-control mb-3" placeholder="Subject" required>
+            <textarea class="form-control mb-3" rows="4" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-danger w-100">Submit</button>
+          </form>
+        </div>
+      </div>
 
+    </div>
+  </div>
+</section>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- About Us Section -->
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- About Us Section -->
+        <div class="col-md-4">
+          <h5 class="text-uppercase">About Us</h5>
+          <p>Yasha Hydraulics, specializing in Earthmoving and Construction equipment spares, providing top-quality solutions since 2001.</p>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="col-md-4">
+          <h5 class="text-uppercase">Contact Info</h5>
+          <p><i class="fas fa-map-marker-alt"></i> Pride Plaza, Shop No. 3<br>Behind Dr. Ambedkar Statue,<br>Pimpri, Pune - 411 018.</p>
+          <p><i class="fas fa-phone"></i>  9822297696 / 7798885747</p>
+          <p><i class="fas fa-envelope"></i> yash.hydraulics@gmail.com</p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-md-4">
+          <h5 class="text-uppercase">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">About</a></li>
+            <li><a href="#" class="footer-link">Services</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+          <!-- Social Icons -->
+          <div class="social-icons mt-3">
+            <a href="" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://maps.app.goo.gl/Ap52Sb1fjMpagW18A" class="social-icon" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>  
+  
+      <!-- Copyright -->
+      <div class="text-center mt-3">
+        <hr class="footer-divider">
+        <p class="mb-0">© 2025 Yasha Hydraulics | All Rights Reserved. | Developed & Managed By<a href="https://www.d2sindia.com/" class="social-icon"> D2S India,Pune. </p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- CSS Styling -->
+  <style>
+    .red-strip {
+  background-color: #e00000; /* Bootstrap danger red */
+  color: white;
+}
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-<javascript></javascript>
-</html>
+/* Text styles */
+.red-strip h3,
+.red-strip p {
+  color: white;
+}
+
+/* Contact form styles */
+.contact-form {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Form inputs */
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Submit button */
+.contact-form .btn-danger {
+  background-color: #e00000;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.contact-form .btn-danger:hover {
+  background-color: #e00000;
+}
+
+/* Responsive spacing adjustments */
+@media (max-width: 991.98px) {
+  .mt-16 {
+    margin-top: 2rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .mt-lg-0 {
+    margin-top: 0 !important;
+  }
+}
+    .footer {
+      font-size: 15px;
+    }
+  
+    .footer h5 {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  
+    .footer p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+  
+    .footer-link {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+  
+    .footer-link:hover {
+      color: #f8f9fa;
+      text-decoration: underline;
+    }
+  
+    
+  .social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #e00000; /* Bootstrap primary or your brand color */
+  }
+   .footer-divider {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      width: 80%;
+      margin: 10px auto;
+    }
+   @media (max-width: 767px) {
+    .footer .col-md-4 {
+      text-align: center;
+      padding: 20px 15px;
+      font-size: 14px;
+    }
+  
+    .footer h5 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    .footer p {
+      font-size: 13px;
+      margin: 4px 0;
+    }
+  
+    .footer-link {
+      display: block;
+      margin: 6px 0;
+      font-size: 13px;
+    }
+  
+    .social-icons {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .social-icons a {
+      font-size: 18px;
+      margin: 8px;
+    }
+  
+    .footer-divider {
+      width: 90%;
+      margin: 15px auto;
+    }
+       /* Red Strip Container */
+.red-strip {
+  background-color: #e00000;
+  padding: 20px;
+  color: white;
+}
+  }
+  
+  </style>
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTop");
+  
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    });
+  
+    scrollToTopBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+  
+  
+  
+  <!-- FontAwesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  
+  <!-- jQuery and Owl Carousel Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: true,
+       
+      });
+    });
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+  </body>
+  </html>

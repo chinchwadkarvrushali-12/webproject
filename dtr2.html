@@ -15,7 +15,7 @@
       background-color: #f4f4f9;
     }
 
-     .navbar {
+   .navbar {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: red; /* Change this line */
   backdrop-filter: blur(10px);
@@ -127,104 +127,125 @@ company-name:hover {
 
 
 }
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 20px;
+
+    .hero {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      background: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #fff;
+      border-left: 5px solid #e00000;
+      border-radius: 10px;
+    }
+
+    .models {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .models li {
+      background-color: #e00000;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 10px;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .image-gallery img {
+      width: 50%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      min-height: 50px;
+    }
+    .image-gallery .image-wrapper {
+  width: 100%;
+  height: 350px; /* Fixed height for all images */
+  overflow: hidden;
+ 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.uniform-img {
+  height: 100%;               /* Take full height of container */
+  width: 100%;                /* Take full width of container */
+  object-fit: contain;        /* Show full image without cropping */
+}
+.image-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the box */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h1, h2 {
-  text-align: center;
-  color: #2c3e50;
+.image-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Mission, Vision, Values section */
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin-top: 40px;
-}
 
-.card {
-  background: white;
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
+    h1, h2, h3 {
+      text-align: center;
+      color: black;
+    }
 
-.card h2 {
-  margin-bottom: 16px;
-  font-size: 20px;
-  color: #1d4ed8;
-}
+    .container p {
+      font-size: 18px;
+    }
 
-.card ul {
-  padding-left: 20px;
-  text-align: left;
-}
 
-/* Team section */
-.team-section {
-  margin-top: 60px;
-}
 
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 24px;
-}
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 10px 20px;
+      }
 
-.team-member {
-  background: white;
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  padding: 16px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
+      .hero {
+        min-height: auto;
+        padding: 2rem 1rem;
+      }
 
-.team-member img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 12px;
-}
+      .hero img {
+        max-height: 300px;
+        object-fit:cover;
+      }
 
-.team-member h3 {
-  font-size: 16px;
-  margin-bottom: 4px;
-}
-
-.team-member p {
-  font-size: 14px;
-  color: #6b7280;
-}
-.red-strip {
+      .nav-link {
+        margin: 10px 0;
+      }
+    }
+    .red-strip {
   background-color: #e00000;
   padding: 20px;
-  color: white;}
-.scroll-up {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: #d30000; /* Green color */
-    color: white;
-    border: none;
-    padding: 12px 16px;
-    border-radius: 75%;
-    text-decoration: none;
-    font-size: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: background-color 0.3s;
+  color: white;
 }
-
-.scroll-up:hover {
-    background-color: #d30000;
-    cursor: pointer;
+.card-img-top {
+  object-fit: cover;
+  height: 300px; /* or auto for natural height */
 }
 /* Scroll to Top Button */
 #scrollToTop {
@@ -250,7 +271,10 @@ h1, h2 {
   background: #c00000;
 }
 
-
+.image-wrapper img {
+  object-fit: fill;
+  width: 100%;
+  height: auto;}
 /* Get in Touch Button */
 .get-in-touch {
   position: fixed;
@@ -269,9 +293,19 @@ h1, h2 {
 .get-in-touch:hover {
   background: #c00000;
 }
+@media (max-width: 576px) {
+  .working-pictures-section h3 {
+    font-size: 20px;
+  }
+  .working-pictures-section p {
+    font-size: 14px;
+  }
+}
 
-</style>
- <nav class="navbar navbar-expand-lg" style="background-color: #E31E25;">
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg" style="background-color: #E31E25;">
     <div class="container-fluid">
       
       <!-- Brand with logo and text -->
@@ -294,106 +328,164 @@ h1, h2 {
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link text-white">About</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link text-white">Services</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+           <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+   <li><a class="dropdown-item text-black" href="cp.html"><strong>CP</strong></a></li>
+  <li><a class="dropdown-item text-black" href="dtr2.html"><strong>DTR</strong></a></li>
+  <li><a class="dropdown-item text-black" href="kirloskar.html"><strong>Kirloskar Oil Engines</strong></a></li>
+</ul>
+
+         
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </div>
-      
     </div>
   </nav>
-  
 
-  <!-- Hero Section -->
-  <section class="hero d-flex align-items-center justify-content-center text-white text-center" style="background: url('img1/about us banner.png') no-repeat center center/cover; height: 300px;">
+
+ 
+
+  <section class="py-5 bg-light text-black">
+    <div class="container">
+      <div class="row align-items-center">
+         <!-- Text Section -->
+         <div class="col-md-6 bg-light text-black p-4 text-align left">
+          <!-- DTR Logo Before Heading -->
+          <img src="img1/DTR.png" alt="DTR Logo" style="max-width: 150px;" class="mb-3">
+        
+       
+          
+          <p>
+          <strong> DTR - Applicable Carrier Models</strong><br>
+            DTR hydraulics breakers are designed for high-performance rock breaking, concrete demolition, and excavation work. 
+            They are built for durability and efficiency, making them ideal for excavators, backhoes, and skid steers 
+            in tough working conditions.
+          </p>
+        </div>
+        
+        <!-- Image Section -->
+        <div class="col-md-6">
+          <img src="img1/DTR13.jpg" alt="Excavator" class="img-fluid w-100">
+        </div>
+  
+       
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-5 background-color red-strip text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="fw-bold text-center text-white">Benefits</h3>
+        </div>
+        <div class="col-md-8">
+          <ul>
+            <li><strong>High Productivity:</strong> Nitrogen Charged backhead for superior impact transfer.</li>
+            <li><strong>Efficient Demolition:</strong> Large diameter piston for high impact energy.</li>
+            <li><strong>R.O.I.:</strong> Low cost of operation & maintenance with original DTR parts.</li>
+            <li><strong>Long Service Life:</strong> Durable with high cost benefit.</li>
+            <li><strong>Safety:</strong> Robust casing protects inner body from damage.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 bg-light text-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="fw-bold text-center">Applicable Carrier Models</h3>
+        </div>
+        <div class="col-md-8">
+          <ul class="models">
+            <li>4-8T Models</li>
+            <li>10-15T Models</li>
+            <li>17-26T Models</li>
+            <li>28-38T Models</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="py-5 background-color red-strip text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="fw-bold text-center text-white">Exploded View</h3>
+        </div>
+        <div class="col-md-8">
+     
+        </div>
+        <div class="row image-gallery">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <img src="img1/Picture1.png" alt="Exploded View" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
    
-  </section>
-
-  <!-- Mission Section -->
-  <section class="py-5 background-color red-strip text-white">
+<section class="py-5 text-black bg-light">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h3 class="fw-bold text-center ">OUR MISSION</h3>
+      <div class="row mb-4">
+        <div class="col-12 col-md-4">
+          <h3 class="fw-bold text-center text-md-start">Working Pictures</h3>
         </div>
-        <div class="col-md-8">
-          <p>Our company is based on Honesty in our servings to our Customer, Integrity in our thought processes and actions , 
-            and with a single track mind, to supply our Customers with the Best Quality sourced products 
-            to save on Equipment Downtime , Speedy Turnaround and no sudden Mid Season Breakdowns. 
-            Best service team for Rock breaker maintenance.</p>
-          </ul>
+        <div class="col-12 col-md-8">
+          <p class="text-center text-md-start">Detailed view of the DTR components and assembly.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-
-  <section class="overlay-section position-relative" style="background-color: #f0f0f0; height: 400px;">
-    <div class="overlay-content position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-      <div class="container text-dark">
-        <div class="row">
-          
-          <div class="col-md-4">
-            <h3 class="fw-bold text-center">OUR VISION</h3>
-          </div>
   
-          <div class="col-md-8">
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer-directed convergence without revolutionary ROI.</p>
-            <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+  
+      <div class="row g-4 justify-content-center">
+        <!-- Image 1 -->
+        <div class="col-md-7 col-lg-5">
+          <div class="card shadow-sm">
+            <img src="img1/dtr01 (1).jpg" alt="DTR component" class="card-img-top img-fluid rounded">
           </div>
-          
+        </div>
+  
+        <!-- Image 2 -->
+        <div class="col-md-7 col-lg-5">
+          <div class="card shadow-sm">
+            <img src="img1/dtr01 (2).jpg" alt="DTR component close-up" class="card-img-top img-fluid rounded">
+          </div>
         </div>
       </div>
     </div>
   </section>
   
-  <section class="py-5 background-color red-strip text-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h3 class="fw-bold text-center">OUR VALUES</h3>
-        </div>
-        <div class="col-md-8">
-          <ul class="list-unstyled">
-            <li>✔ To provide the entire range of Excavator spares under one roof.</li>
-            <li>✔ To provide Good Quality Replacement spares which reduce Equipment Downtime and increase Productivity.</li>
-            <li>✔ To represent the topmost Suppliers and provide their field of Expertise and Quality to our clients.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
- <!-- Team Section 
-<section class="py-5 bg-white text-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h3 class="fw-bold text-center text-black">OUR TEAM</h3>
-        </div>
-        <div class="d-flex justify-content-center gap-4 flex-wrap">
-          <div class="member position-relative" style="width:200px; height:250px;">
-            <img src="img1/1.jpeg" class="w-100 h-100 rounded shadow" style="object-fit:cover;">
-          </div>
-          <div class="member position-relative" style="width:200px; height:250px;">
-            <img src="img1/team.jpeg" class="w-100 h-100 rounded shadow" style="object-fit:cover;">
-          </div>
-        </div>
-    </div>
-  </section>-->
+ 
 
+<section class="py-5 background-color red-strip text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3 class="fw-bold text-center text-white">Sales Data</h3>
+      </div>
+      <div class="col-md-8">
+        <p>We have successfully sold over <strong>200+ units</strong> and have received positive feedback from satisfied clients..</p>
+      </div>
+     
+    </div>
+  </div>
+</section>
+  
 <!-- Upward Arrow Button -->
 <a href="#" id="scrollToTop" title="Back to Top">&#8593;</a>
-
 <!-- Get in Touch Button -->
 <a href="contact.html" id="getInTouch" class="get-in-touch">Get in Touch</a>
-
-
 <footer class="footer bg-dark text-white py-4">
   <div class="container">
     <div class="row">
       <!-- About Us Section -->
       <div class="col-md-4">
         <h5 class="text-uppercase">About Us</h5>
-        <p>Yasha hydraulics, specializing in Earthmoving and Construction equipment spares, providing top-quality solutions since 2001.</p>
+        <p>Yasha Hydraulics, specializing in Earthmoving and Construction equipment spares, providing top-quality solutions since 2001.</p>
       </div>
 
       <!-- Contact Info -->
@@ -425,7 +517,7 @@ h1, h2 {
     <!-- Copyright -->
     <div class="text-center mt-3">
       <hr class="footer-divider">
-     <p class="mb-0">© 2025 Yasha Hydraulics | All Rights Reserved. | Developed & Managed By<a href="https://www.d2sindia.com/" class="social-icon"> D2S India,Pune. </p>
+      <p class="mb-0">© 2025 Yasha Hydraulics | All Rights Reserved. | Developed & Managed By<a href="https://www.d2sindia.com/" class="social-icon"> D2S India,Pune. </p>
     </div>
   </div>
 </footer>
@@ -444,6 +536,7 @@ h1, h2 {
   .footer p {
     font-size: 14px;
     margin: 5px 0;
+    color: #fff;
   }
 
   .footer-link {
